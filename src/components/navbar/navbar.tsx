@@ -39,7 +39,7 @@ const Navbar = () => {
 
     return (
 
-        <Box className='shadow' width={'100%'} height={'7vh'}>
+        <Box className='shadow' width={'100%'} height={'7vh'} position={'fixed'} zIndex={2}  bg={'white'}>
             <Box className='wrapper' display={'flex'} p={'10px'} justifyContent={'space-between'} alignItems={'center'} >
                 <Box fontWeight={'bold'} fontSize={'30px'}>
                     <span style={{color: 'red'}}>MO</span>devco

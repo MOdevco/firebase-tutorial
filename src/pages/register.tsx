@@ -34,9 +34,7 @@ const Register = () => {
         if(user) {
             router.push('/')
         }
-        if(!user) {
-            router.push('/register')
-        }
+        
     } ,[user])
 
   return (

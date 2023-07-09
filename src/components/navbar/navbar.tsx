@@ -39,8 +39,8 @@ const Navbar = () => {
 
     return (
 
-        <Box className='shadow' width={'100%'} height={'7vh'} position={'fixed'} zIndex={2}  bg={'white'}>
-            <Box className='wrapper' display={'flex'} p={'10px'} justifyContent={'space-between'} alignItems={'center'} >
+        <Box className='shadow' width={'100%'} height={{base: '14vh' , md: '7vh'}} position={'fixed'} zIndex={2}  bg={'white'}>
+            <Box className='wrapper' display={'flex'} flexDirection={{base: 'column' , md: 'row'}} p={'10px'} justifyContent={'space-between'} alignItems={'center'} >
                 <Box fontWeight={'bold'} fontSize={'30px'}>
                     <span style={{color: 'red'}}>MO</span>devco
                 </Box>
@@ -48,11 +48,10 @@ const Navbar = () => {
                     <Link href={'/register'}>
                         <Button bg={'transparent'} border={'2px'} borderColor={'blue.300'}>Ro'yhatdan o'tish</Button>
                     </Link>
-                    <Button bg={'blue.200'} >Kirsh</Button>
                 </Box>}
 
              {user && 
-                <Box display={'flex'} alignItems={'center'}>
+                <Box display={'flex'} flexDirection={{base: 'column' , md: 'row'}} alignItems={'center'}>
                     <Button bg={'transparent'} _hover={{bg: 'transparent'}}>
                         <Menu>
                             <MenuButton>
@@ -66,7 +65,7 @@ const Navbar = () => {
                             </MenuList>
                         </Menu>
                     </Button>
-                    <Text>
+                    <Text display={{base: 'none' , md: 'block'}}>
                         {user.displayName}    
                     </Text>                    
                 </Box>

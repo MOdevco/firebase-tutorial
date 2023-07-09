@@ -4,7 +4,7 @@ import Image  from 'next/image'
 const Cards = () => {
     return (
         <>
-            <Card maxW='sm'>
+            <Card maxW='sm' mt={{base: '30px' , md: '20px'}} >
                 <CardBody>
                     <Image
                     src={Product}

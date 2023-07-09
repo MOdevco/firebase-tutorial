@@ -42,13 +42,13 @@ const Register = () => {
   return (
     <Layout>
         <Box className='wrapper' display={'flex'} justifyContent={'center'}  alignItems={'center'} minHeight={'100vh'}>
-            <Box className='shadow' display={'flex'} flexDirection={'column'} justifyContent={'space-between'} p={'20px'} width={'400px'} height={'300px'} rounded={'10px'}>
+            <Box className='shadow' display={'flex'} flexDirection={'column'} justifyContent={'space-between'} p={'20px'} width={{base: '100%' , md: '400px'}} height={'300px'} rounded={'10px'}>
                 <Box>
                     <Text fontWeight={'bold'} fontSize={'30px'}>Google yordamida kirish</Text>
                 </Box>
                 <Box>
-                    <Button onClick={signHandler} p={'30px'} display={'flex'} gap={'20px'} _hover={{bg: '#111'}} color={'white'} bg={'#333'}>
-                        <Avatar />
+                    <Button onClick={signHandler} p={'30px'} display={'flex'} width={{base: '100%'}} gap={'20px'} _hover={{bg: '#111'}} color={'white'} bg={'#333'}>
+                        <Avatar display={{base: 'none' , md: 'block'}} />
                         Faqat Google orqalik kirish
                     </Button>
                 </Box>

@@ -19,7 +19,7 @@ const HomePage = () => {
   return (
     <Box className='wrapper'  flexDirection={'column'} display={'flex'} justifyContent={'space-between'}>
 
-        <Box  display={'flex'} mt={'100px'} alignItems={'center'} justifyContent={'space-between'}>
+        <Box  display={'flex'} flexDirection={{base: 'column' , md: 'row'}} mt={{base: '150px' , md: '100px'}} alignItems={'center'} justifyContent={'space-between'}>
             <Heading fontWeight={'bold'}>
                 <span style={{color: 'red'}}>MO</span>devco
             </Heading>
@@ -28,33 +28,33 @@ const HomePage = () => {
             </Text>
         </Box>
 
-        <Box mt={'100px'}  display={'flex'} justifyContent={'space-between'} flexDirection={'column'} gap={5}>
-            <Box  display={'flex'} justifyContent={'space-between'}>
+        <Box mt={'100px'}  display={'flex'} justifyContent={'space-between'} flexDirection={'column'} gap={'100px'}>
+            <Box  display={'flex'} flexWrap={'wrap'} mt={{base: '100px' , md: '20px'}}  justifyContent={'space-between'}>
                 <Cards />
                 <Cards />
                 <Cards />
             </Box>
-            <Box  display={'flex'} justifyContent={'space-between'}>
+            <Box  display={'flex'} flexWrap={'wrap'} mt={{base: '100px' , md: '20px'}}  justifyContent={'space-between'}>
                 <Cards />
                 <Cards />
                 <Cards />
             </Box>
-            <Box  display={'flex'} justifyContent={'space-between'}>
+            <Box  display={'flex'} flexWrap={'wrap'} mt={{base: '100px' , md: '20px'}}  justifyContent={'space-between'}>
                 <Cards />
                 <Cards />
                 <Cards />
             </Box>
-            <Box  display={'flex'} justifyContent={'space-between'}>
+            <Box  display={'flex'} flexWrap={'wrap'} mt={{base: '100px' , md: '20px'}}  justifyContent={'space-between'}>
                 <Cards />
                 <Cards />
                 <Cards />
             </Box>
-            <Box  display={'flex'} justifyContent={'space-between'}>
+            <Box  display={'flex'} flexWrap={'wrap'} mt={{base: '100px' , md: '20px'}}  justifyContent={'space-between'}>
                 <Cards />
                 <Cards />
                 <Cards />
             </Box>
-            <Box  display={'flex'} justifyContent={'space-between'}>
+            <Box  display={'flex'} flexWrap={'wrap'} mt={{base: '100px' , md: '20px'}}  justifyContent={'space-between'}>
                 <Cards />
                 <Cards />
                 <Cards />
